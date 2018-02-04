@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton" /-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  </head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Pixel Art Maker</h1>
+        </div>
+
+        <div class="canvas-settings">
+            <div class="grid-size">
+                <h2>Grid Size</h2>
+                <form id="sizePicker">
+                    <label for="input_height">Grid Height:</label>
+                    <input type="number" id="input_height" name="height" min="1" max="30" value="20" /><br />
+                    <label for="input_width">Grid Width:</label>
+                    <input type="number" id="input_width" name="width" min="1" max="30" value="20" /><br />
+                    <input type="submit" />
+                </form>
+            </div>
+            <hr />
+
+            <div class="color-palette">
+                <h2>Color Palette</h2>
+                <input type="color" id="colorPicker" value="#000000" /><br /><br />
+
+                <div class="palette-row">
+                    <button class="palette-button button1"></button>
+                    <button class="palette-button button2"></button>
+                    <button class="palette-button button3"></button>
+                    <button class="palette-button button4"></button>
+                    <button class="palette-button button5"></button>
+                </div>
+                <div class="palette-row">
+                    <button class="palette-button button6"></button>
+                    <button class="palette-button button7"></button>
+                    <button class="palette-button button8"></button>
+                    <button class="palette-button button9"></button>
+                    <button class="palette-button button10"></button>
+                </div>
+            </div>
+            <hr />
+
+            <div class="tools">
+                <h2>Tools</h2>
+                <i class="fas fa-paint-brush" title="Draw pixels"></i>
+                <!--i class="fas fa-eraser" title="Erase pixels"></i-->
+                <i class="far fa-file" title="Clear grid"></i>
+                <i class="fas fa-table" title="Toggle grid border"></i>
+                <i class="fas fa-search-plus" title="Zoom-in"></i>
+                <i class="fas fa-search-minus" title="Zoom-out"></i>
+                <i class="fas fa-eye-dropper" title="Pick a color from the grid"></i>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <table id="pixel_canvas">
+        	</table>
+        </div>
+    </div>
+
+    <script src="designs.js"></script>
+
+</body>
+</html>

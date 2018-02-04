@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #2b3e50;
+}
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.2em;
+    margin: 0 0.2em;
+    color: #fff;
+}
+
+
+h2 {
+    margin: 1em 0 0.25em;
+}
+
+
+h2:first-of-type {
+    margin: 0.7em 0;
+}
+
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+tr {
+    height: 20px;
+}
+
+
+td {
+    width: 20px;
+    background-color: #fff;
+}
+
+
+input[type=number] {
+    width: 4.5em;
+    margin: 0.2em;
+    padding: 0.2em;
+}
+
+
+input[type=color] {
+    width: 4.5em;
+}
+
+
+input[type=submit] {
+    margin-top: 0.5em;
+    padding: 0.3em;
+}
+
+
+hr {
+    width: 75%;
+    height: 2px;
+    border-width: 0;
+    color: gray;
+    background-color: gray
+}
+
+
+/* Main wrapper */
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Page header */
+.header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    background-color: #4e5d6c;
+}
+
+
+/* Main Canvas */
+.canvas {
+    position: relative;
+    width: 65%;
+    float: left;
+    margin: 1.5em 2.5em 1.5em 0;
+    padding: 0 0 30px 0;
+}
+
+
+/* Canvas settings */
+.canvas-settings {
+    position: relative;
+    width: 20%;
+    float: left;
+    margin: 1.5em 2.5em;
+    padding: 0 0 30px 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.grid-size,
+.color-palette,
+.tools {
+    margin: 1.5em 1em ;
+    text-align: left;
+}
+
+
+/* Color palette buttons */
+.palette-button {
+    width: 2.5em;
+    height: 2.5em;
+    display: inline-block;
+    margin: 0.2em 0.2em;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Color palette buttons: individual buttons */
+.button1 { background-color: #ed5565; // grapefruit }
+.button2 { background-color: #ffce54; // sunflower }
+.button3 { background-color: #a0d468; // grass }
+.button4 { background-color: #5d9cec; // blue jeans}
+.button5 { background-color: #4fc1e9; // aqua }
+.button6 { background-color: #ac92ec; // lavender }
+.button7 { background-color: #d770ad; // pink rose }
+.button8 { background-color: #ccd1d9; // medium gray}
+.button9 { background-color: #ffffff; // white}
+.button10 { background-color: #656d78; // dark gray}
+
+
+/* Style that removes border from the grid */
+.grid-without-border {
+    border: none;
+}
+
+
+.far,
+.fas {
+    margin: 0 0 8px 4px;
+    width: 15px;
+    padding: 0.7em;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+.far:hover,
+.fas:hover {
+    background-color: #656d78;
+}
+
+
+/*
+ * For Mobile Phones
+ */
+@media only screen and (max-width:620px) {
+
+    .header, .canvas, .canvas-settings {
+        width: 100%;
+    }
+    .canvas {
+        margin: 2.5em;
+    }
+}
